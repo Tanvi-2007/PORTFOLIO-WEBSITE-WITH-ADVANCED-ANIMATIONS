@@ -1,0 +1,177 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #fdfdfd;
+  color: #333;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #ff6b6b, #ffa07a);
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* This adds equal space between all elements */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  color: #fffbd5;
+}
+
+.about {
+  padding: 80px 20px;
+  background: linear-gradient(to right, #ffe6e6, #fff0f0);
+  text-align: center;
+}
+
+.about-text-card {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-text-card h2 {
+  font-size: 2rem;
+  color: #ff6b6b;
+  margin-bottom: 20px;
+}
+
+.about-text-card p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.about-text-card .emoji {
+  font-size: 1.2rem;
+  margin-right: 6px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ff6b6b;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn:hover {
+  background: #e63946;
+}
+
+.btn {
+  margin-top: 100px; /* Increase this value if needed */
+  padding: 10px 20px;
+  background: white;
+  color: #ff6b6b;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+
+.btn:hover {
+  background: #ff6b6b;
+  color: white;
+}
+
+.skills {
+  padding: 60px 20px;
+  background: #fff0f0;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  color: #ff6b6b;
+  margin-bottom: 30px;
+}
+
+.skill-bar {
+  max-width: 500px;
+  margin: 15px auto;
+  text-align: left;
+}
+
+.skill-bar p {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.bar {
+  background: #ddd;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: #ff6b6b;
+  width: 0; /* will animate to target width using GSAP */
+}
+
+/* Projects */
+.project-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.project-card {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  padding: 20px;
+}
